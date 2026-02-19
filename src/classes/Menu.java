@@ -1,12 +1,15 @@
 package classes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
 
     private List<Plato> platos;
 
-    public Menu(){}
+    public Menu(){
+        this.platos = new ArrayList<>();
+    }
 
     public float calcularPrecio() {
 
@@ -15,19 +18,13 @@ public class Menu {
             precioMenu += plato.getPrecio();
         }
         return precioMenu;
-
     }
 
     public List<Plato> obtenerPlatos() {
-
         return platos;
-
     }
 
     public void asignarPlato(Plato plato) {
-
         platos.add(plato);
-
     }
-
 }
