@@ -7,12 +7,15 @@ public class Plato {
     private TipoPlato tipo;
     private TipoAcompanamiento acompanamiento;
 
-    public void setPrecio(float nuevoPrecio) {
-        precio = nuevoPrecio;
+    public Plato(String nombre, float precio, TipoPlato tipo, TipoAcompanamiento acompanamiento) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.tipo = tipo;
+        this.acompanamiento = acompanamiento;
     }
 
-    public void setPrecio(String nuevoNombre) {
-        nombre = nuevoNombre;
+    public void asignarPrecio(float nuevoPrecio) {
+        this.precio = nuevoPrecio;
     }
 
     public String getNombre() {
@@ -23,4 +26,11 @@ public class Plato {
         return precio;
     }
 
+    public TipoPlato getTipo() {
+        return tipo;
+    }
+
+    public TipoAcompanamiento getAcompanamiento() {
+        return acompanamiento;
+    }
 }
