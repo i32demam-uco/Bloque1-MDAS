@@ -1,4 +1,4 @@
-package classes;
+package FactoriaAbstracta;
 
 public abstract class FactoriaAbstracta {
 
