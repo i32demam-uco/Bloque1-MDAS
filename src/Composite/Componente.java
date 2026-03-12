@@ -1,5 +1,6 @@
 package Composite;
 
-public class Componente {
-    
+public interface Componente {
+    double calcularGasto();
+    String getNombre();
 }
